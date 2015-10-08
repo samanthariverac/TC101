@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+void stars (int n) {
+  for (int i= 0; i< n; i++) {
+    cout <<"*";
+  }
+  cout << endl;
+}
+int main () {
+int n;
+cout <<"Enter the number of * you want to print: ";  cin >> n;
+stars (n);
+return 0;
+}
