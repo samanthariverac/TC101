@@ -10,5 +10,6 @@ int main () {
 int n;
 cout <<"Enter the number of * you want to print: ";  cin >> n;
 stars (n);
+cout << endl;
 return 0;
 }
