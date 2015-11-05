@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+long  fibonacci(long n) {
+  if (n==0) {
+    return 0;
+  }
+  else if (n==1) {
+    return 1;
+  }
+  else {
+    long x=0;
+    long y=1;
+    long z; //next number
+    for (int i=0; i< n-1; i++){
+      z=x+y;
+      x=y;
+      y=z;
+    }
+  return z;
+  }
+}
+
+int main(){
+long n;
+cout << "Enter the nth number of the Fibonacci series that you want to know the value: "; cin >> n;
+cout <<   fibonacci(n) << endl;
+  return 0;
+}
